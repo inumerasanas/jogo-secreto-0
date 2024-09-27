@@ -1,7 +1,6 @@
 
 let listaNumeros = [];
 let numeroLimite = 15;
-
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -22,7 +21,7 @@ function exibirMensagemInicial(){
 function gerarNumeroAleatorio() {
     let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
     let quantidadeElementos = listaNumeros.length;
-
+    //regra para não repetir
     if(quantidadeElementos = 3 ){
         listaNumeros = [];
     }
